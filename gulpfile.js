@@ -46,12 +46,12 @@ gulp.task('static', function() {
 });
 
 gulp.task('images', function() {
-    return gulp.src('./img')
+    return gulp.src('./img/**')
         .pipe(gulp.dest('./dist/img'));
 });
 
 gulp.task('fonts', function() {
-    return gulp.src('./fonts')
+    return gulp.src('./fonts/**')
         .pipe(gulp.dest('./dist/fonts'));
 });
 
